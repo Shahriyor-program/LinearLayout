@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333030"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--        Block 1-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/java_course" />
+
+        <!--        Block 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/learn_java"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/teacher"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_teacher"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/learn_java" />
+
+        </LinearLayout>
+
+        <!--        Block 3-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/description_java"
+            android:textColor="@color/white" />
+
+        <!--        Block 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_course"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/courseAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:text="@string/android_developer"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="535dp" />
+
+                <TextView
+                    android:id="@+id/courseKotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/teal_700"
+                    android:text="@string/kotlin"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="305dp"
+                    tools:layout_editor_absoluteY="535dp" />
+
+                <TextView
+                    android:id="@+id/courseFlutter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/teal_700"
+                    android:text="@string/flutter"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="349dp"
+                    tools:layout_editor_absoluteY="535dp" />
+
+                <TextView
+                    android:id="@+id/courseJS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/teal_700"
+                    android:text="@string/javascript"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="231dp"
+                    tools:layout_editor_absoluteY="535dp" />
+
+                <TextView
+                    android:id="@+id/coursePython"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/teal_700"
+                    android:text="@string/python"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="179dp"
+                    tools:layout_editor_absoluteY="535dp" />
+
+                <TextView
+                    android:id="@+id/courseRuby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/teal_700"
+                    android:text="@string/ruby"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="140dp"
+                    tools:layout_editor_absoluteY="535dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/courseRuby2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:text="@string/ruby2"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="563dp" />
+
+                <TextView
+                    android:id="@+id/courseRuby3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/teal_700"
+                    android:text="@string/ruby3"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="563dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        Block 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                style="?buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_1" />
+
+            <Button
+                style="?buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/button_2" />
+
+            <Button
+                style="?buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_3" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
